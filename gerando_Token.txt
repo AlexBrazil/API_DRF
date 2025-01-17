@@ -1,0 +1,12 @@
+from rest_framework.authtoken.models import Token
+from django.contrib.auth.models import User
+-------------------------------------------------------
+<nome do usuário> = User.objects.get(id=<id do usuário>)
+facil = User.objects.get(id=1)
+--------------------------------------------------------
+token = Token.objects.create(user=facil)
+--------------------------------------------------------
+ token.key
+'a64fb7c1400efd6816a6fd8cd893197d4d78d2dd'
+
+-> Guarde o valor do token
